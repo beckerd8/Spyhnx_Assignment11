@@ -25,5 +25,5 @@ class CSVUpload:
             print(row) 
 
 if __name__ == "__main__":
-    fulePurchase = CSVUpload()
+    fuelPurchase = CSVUpload()
 

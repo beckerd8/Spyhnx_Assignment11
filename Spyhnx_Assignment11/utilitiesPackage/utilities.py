@@ -21,7 +21,19 @@ class CSVReader:
             with open(filepath, mode='r', encoding='utf-8-sig') as file:
                 reader = csv.DictReader(file)
                 for row in reader:
-                    data.append(row)
+                   data.append(row)
         except FileNotFoundError:
             print(f"File not found: {filepath}")
         return data
+    """
+    def decimalProcessing(self):
+        for row in self.data:
+            GrossPrice = str(float(row[2]))
+            index = GrossPrice.find(".")
+            after_decimal = GrossPrice[index + 1:]
+            if len(after_decimal) > 2 and after_decimal[2] > 4:
+                formatted_value = float(GrossPrice)+.01
+    """         
+                
+        
+
