@@ -22,7 +22,7 @@ class CSVUpload:
 
     def print_data(self):
         for row in self.data:
-            print(row)
+            print(row) 
 
 if __name__ == "__main__":
     fulePurchase = CSVUpload()
