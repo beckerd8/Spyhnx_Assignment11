@@ -8,6 +8,6 @@
 # Brief Description of the assignment:  Using python to clean the data in a csv file (fix missing values, truncate numbers, delete duplicate rows)
 
 # Brief Description of what this module does. Cleans the csv file, accesses an API to fill nul zip codes. 
-# Citations: Gemini AI
+# Citations:
 
 # Anything else that's relevant:

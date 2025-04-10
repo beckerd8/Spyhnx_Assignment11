@@ -42,8 +42,7 @@
     <Folder Include="utilitiesPackage\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="csvData\Assignment11 Spring 2025\Assignment11 Spring 2025.docx" />
-    <Content Include="csvData\Assignment11 Spring 2025\fuelPurchaseData.csv" />
+    <Content Include="csvData\fuelPurchaseData.csv" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
