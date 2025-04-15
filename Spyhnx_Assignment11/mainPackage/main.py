@@ -5,25 +5,15 @@
 # Due Date:   4/17/2025
 # Course #/Section:   IS 4010 001
 # Semester/Year:   Spring 2025
-# Brief Description of the assignment:  Using python to clean the data in a csv file (fix missing values, truncate numbers, delete duplicate rows)
+# Brief Description of the assignment: Using python to clean the data in a csv file (fix missing values, truncate numbers, delete duplicate rows)
 
 # Brief Description of what this module does. calls the functions from the other modules and executes them. 
 # Citations: 
 
 # Anything else that's relevant:
 
-from utilitiesPackage.utilities import *
-
-class CSVUpload:
-    def __init__(self):
-        csv_reader = CSVReader()
-        self.data = csv_reader.read_CSV_file("./csvData/fuelPurchaseData.csv")
-        self.print_data()
-
-    def print_data(self):
-        for row in self.data:
-            print(row) 
+from dataProcessing.dataProcessing import *
 
 if __name__ == "__main__":
-    fuelPurchase = CSVUpload()
-
+    processor = DataProcessor("./csvData/fuelPurchaseData.csv")
+    processor.clean_data()
